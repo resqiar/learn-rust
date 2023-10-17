@@ -1,3 +1,4 @@
+mod enums_mod;
 mod struct_mod;
 
 fn main() {
@@ -29,7 +30,13 @@ fn main() {
     println!("");
 
     // struct
-    struct_mod::main()
+    struct_mod::main();
+
+    println!("================================================");
+    println!("");
+
+    // enums & pattern matching
+    enums_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
