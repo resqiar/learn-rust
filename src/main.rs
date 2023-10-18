@@ -1,4 +1,5 @@
 mod enums_mod;
+mod match_mod;
 mod struct_mod;
 
 fn main() {
@@ -26,17 +27,20 @@ fn main() {
     let b = split_word(&s, 1);
     println!("SPLIT WORD:{}", b);
 
-    println!("================================================");
-    println!("");
+    print_divider();
 
     // struct
     struct_mod::main();
 
-    println!("================================================");
-    println!("");
+    print_divider();
 
-    // enums & pattern matching
+    // enums
     enums_mod::main();
+
+    print_divider();
+
+    // options
+    match_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
@@ -51,4 +55,9 @@ fn split_word(input: &str, num: usize) -> &str {
     }
 
     return words[num - 1];
+}
+
+fn print_divider() {
+    println!("================================================");
+    println!("");
 }
