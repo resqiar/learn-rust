@@ -1,5 +1,6 @@
 mod enums_mod;
 mod match_mod;
+mod string_mod;
 mod struct_mod;
 mod vector_mod;
 
@@ -47,6 +48,11 @@ fn main() {
 
     // vectors
     vector_mod::main();
+
+    print_divider();
+
+    // string
+    string_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
