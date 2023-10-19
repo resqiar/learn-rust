@@ -1,6 +1,7 @@
 mod enums_mod;
 mod match_mod;
 mod struct_mod;
+mod vector_mod;
 
 fn main() {
     let x = "is x uppercase?";
@@ -41,6 +42,11 @@ fn main() {
 
     // options
     match_mod::main();
+
+    print_divider();
+
+    // vectors
+    vector_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
