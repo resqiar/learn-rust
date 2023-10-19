@@ -1,4 +1,5 @@
 mod enums_mod;
+mod hash_mod;
 mod match_mod;
 mod string_mod;
 mod struct_mod;
@@ -53,6 +54,11 @@ fn main() {
 
     // string
     string_mod::main();
+
+    print_divider();
+
+    // hash map
+    hash_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
