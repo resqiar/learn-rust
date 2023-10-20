@@ -1,4 +1,5 @@
 mod enums_mod;
+mod generic_mod;
 mod hash_mod;
 mod match_mod;
 mod string_mod;
@@ -59,6 +60,11 @@ fn main() {
 
     // hash map
     hash_mod::main();
+
+    print_divider();
+
+    // generics
+    generic_mod::main();
 }
 
 fn get_len(input: &String) -> usize {
