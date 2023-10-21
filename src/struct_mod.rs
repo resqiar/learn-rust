@@ -1,5 +1,5 @@
 #[derive(Debug)]
-struct Color(u32, u32, u32);
+pub struct Color(pub u32, pub u32, pub u32);
 
 #[derive(Debug)]
 struct Vehicle {
@@ -8,12 +8,12 @@ struct Vehicle {
     color: Color,
 }
 
-struct Dimension(u32, u32);
+pub struct Dimension(pub u32, pub u32);
 
-struct Rect {
-    name: String,
-    color: Color,
-    dimension: Dimension,
+pub struct Rect {
+    pub name: String,
+    pub color: Color,
+    pub dimension: Dimension,
 }
 
 impl Rect {
@@ -33,7 +33,7 @@ impl Rect {
         return self.dimension.0 * self.dimension.1;
     }
 
-    fn can_hold(&self, other: Rect) -> bool {
+    pub fn can_hold(&self, other: Rect) -> bool {
         return self.dimension.0 > other.dimension.0 && self.dimension.1 > other.dimension.1;
     }
 }

@@ -4,6 +4,7 @@ mod hash_mod;
 mod match_mod;
 mod string_mod;
 mod struct_mod;
+mod test_mod;
 mod vector_mod;
 
 fn main() {
